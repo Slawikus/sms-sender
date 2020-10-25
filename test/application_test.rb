@@ -26,6 +26,13 @@ describe Application do
       application.run
     end
 
+    it 'prints out splitted messages' do
+      expect(Kernel).to receive(:puts).with(message_1)
+      expect(Kernel).to receive(:puts).with(message_2)
+
+      application.run
+    end
+
     it 'returns zero' do
       assert_equal 0, application.run
     end

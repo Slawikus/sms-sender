@@ -16,6 +16,7 @@ class Application
   def run
     SmsSplitter.call(MESSAGE_TO_SEND).each do |message|
       SmsCarrier.deliver_message(message)
+      Kernel.puts(message)
     end
     0
   end
