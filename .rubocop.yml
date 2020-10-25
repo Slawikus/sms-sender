@@ -1,0 +1,59 @@
+AllCops:
+  Exclude:
+    - Rakefile
+    - bin/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+  SupportedStyles:
+    - snake_case
+    - normalcase
+    - non_integer
+
+Layout/HashAlignment:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  Enabled: false
+
+Layout/ConditionPosition:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: true
+  Max: 80
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  Exclude:
+  - 'test/**/*.rb'
+  - 'Rakefile'
+  - '**/*.rake'
+
+Metrics/ClassLength:
+  CountComments: false
+  Exclude:
+  - 'test/**/*.rb'
+
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+  - 'test/**/*.rb'
+
+Metrics/ModuleLength:
+  CountComments: false
+  Exclude:
+  - 'test/**/*.rb'
