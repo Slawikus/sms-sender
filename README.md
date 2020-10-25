@@ -1,4 +1,4 @@
-Ruby barebone project 
+SMS Sender
 ====
 
 Includes Minitest, RSpec-mocks and Docker.
