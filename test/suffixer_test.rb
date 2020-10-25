@@ -11,7 +11,7 @@ describe Suffixer do
 
     it 'raises an error when too many parts are requested' do
       assert_raises(ArgumentError) do
-        Suffixer.new(1_000_000_000_000)
+        Suffixer.new(1_000)
       end
     end
   end

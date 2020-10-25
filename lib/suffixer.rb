@@ -8,7 +8,9 @@ class Suffixer
   end
 
   def each
-    (1..total_parts).each { |part| yield " - Part #{part} of #{total_parts}" }
+    (1..total_parts).each do |part|
+      yield " - Part #{part} of #{total_parts}"
+    end
   end
 
   private
@@ -20,6 +22,6 @@ class Suffixer
   end
 
   def too_many_parts?
-    total_parts >= 1_000_000_000_000
+    total_parts >= 1_000
   end
 end
